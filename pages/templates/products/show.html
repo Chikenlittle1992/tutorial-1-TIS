@@ -24,7 +24,7 @@
 
         <h5 class="card-title"> 
 
-          {{product.name}} 
+           {{product.name}} 
 
         </h5> 
 
@@ -36,12 +36,14 @@
 
             <p class="card-text">{{product.price}}</p> 
 
-        {% endif %}
+        {% endif %} 
+
         {% for comment in product.comment_set.all %} 
 
         - {{ comment.description }}<br /> 
 
-        {% endfor %}    
+        {% endfor %}   
+
       </div> 
 
     </div> 
@@ -51,3 +53,5 @@
 </div> 
 
 {% endblock %} 
+
+ 
